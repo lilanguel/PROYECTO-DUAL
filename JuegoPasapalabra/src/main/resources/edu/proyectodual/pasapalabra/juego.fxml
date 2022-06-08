@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="fondo" stylesheets="@static/css/estilo.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.proyectodual.pasapalabra.controller.JuegoController">
+   <children>
+      <Circle fx:id="circuloY" fill="DODGERBLUE" layoutX="229.0" layoutY="43.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloA" fill="DODGERBLUE" layoutX="322.0" layoutY="21.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloE" fill="DODGERBLUE" layoutX="472.0" layoutY="108.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloB" fill="DODGERBLUE" layoutX="370.0" layoutY="31.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloV" fill="DODGERBLUE" layoutX="136.0" layoutY="142.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloX" fill="DODGERBLUE" layoutX="189.0" layoutY="68.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloW" fill="DODGERBLUE" layoutX="154.0" layoutY="104.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloO" fill="DODGERBLUE" layoutX="276.0" layoutY="373.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloN" fill="DODGERBLUE" layoutX="321.0" layoutY="379.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloS" fill="DODGERBLUE" layoutX="141.0" layoutY="269.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloU" fill="DODGERBLUE" layoutX="126.0" layoutY="186.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloT" fill="DODGERBLUE" layoutX="126.0" layoutY="230.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloR" fill="DODGERBLUE" layoutX="161.0" layoutY="307.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloQ" fill="DODGERBLUE" layoutX="198.0" layoutY="337.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloM" fill="DODGERBLUE" layoutX="358.0" layoutY="373.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloK" fill="DODGERBLUE" layoutX="431.0" layoutY="337.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloI" fill="DODGERBLUE" layoutX="479.0" layoutY="269.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloG" fill="DODGERBLUE" layoutX="500.0" layoutY="186.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloZ" fill="DODGERBLUE" layoutX="275.0" layoutY="28.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloC" fill="DODGERBLUE" layoutX="410.0" layoutY="53.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloD" fill="DODGERBLUE" layoutX="446.0" layoutY="78.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloF" fill="DODGERBLUE" layoutX="493.0" layoutY="147.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloH" fill="DODGERBLUE" layoutX="494.0" layoutY="230.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloJ" fill="DODGERBLUE" layoutX="457.0" layoutY="307.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloL" fill="DODGERBLUE" layoutX="395.0" layoutY="364.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circuloP" fill="DODGERBLUE" layoutX="237.0" layoutY="358.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="161.0" layoutY="115.0" prefHeight="54.0" prefWidth="299.0" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" />
+      <TextField fx:id="respuesta" layoutX="197.0" layoutY="182.0" />
+      <Button fx:id="botonPasapalabra" layoutX="271.0" layoutY="232.0" mnemonicParsing="false" onAction="#pasapalabra" text="Pasapalabra" />
+      <Circle fill="#09ac00" layoutX="61.0" layoutY="283.0" radius="30.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="#b50000" layoutX="61.0" layoutY="349.0" radius="30.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Button layoutX="524.0" layoutY="351.0" mnemonicParsing="false" onAction="#rendirse" text="Salir" />
+      <Label layoutX="317.0" layoutY="11.0" text="A" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="21.0" text="B" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="43.0" text="C" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="441.0" layoutY="68.0" text="D" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="468.0" layoutY="98.0" text="E" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="489.0" layoutY="137.0" text="F" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="495.0" layoutY="176.0" text="G" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="327.0" text="K" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="454.0" layoutY="297.0" text="J" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="477.0" layoutY="259.0" text="I" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="489.0" layoutY="222.0" text="H" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="391.0" layoutY="354.0" text="L" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="363.0" text="M" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="327.0" text="Q" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="348.0" text="P" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="271.0" layoutY="363.0" text="O" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="369.0" text="N" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="297.0" text="R" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="259.0" text="S" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="220.0" text="T" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="176.0" text="U" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="132.0" text="V" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="94.0" text="W" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="58.0" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="33.0" text="Y" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="272.0" layoutY="18.0" text="Z" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAciertos" layoutX="57.0" layoutY="269.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="labelErrores" layoutX="56.0" layoutY="337.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="botonComenzar" layoutX="508.0" layoutY="314.0" mnemonicParsing="false" onAction="#comenzar" text="Comenzar" />
+      <Label fx:id="label2" alignment="CENTER" layoutX="188.0" layoutY="95.0" prefHeight="17.0" prefWidth="253.0" textFill="WHITE" />
+      <Button fx:id="botonEnviar" layoutX="367.0" layoutY="182.0" mnemonicParsing="false" onAction="#comprobarRespuesta" text="Enviar" />
+      <Label fx:id="labelLetra" alignment="CENTER" contentDisplay="CENTER" layoutX="269.0" layoutY="54.0" prefHeight="17.0" prefWidth="87.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="errorPuntuaciones" alignment="CENTER" contentDisplay="CENTER" layoutX="215.0" layoutY="279.0" prefHeight="60.0" prefWidth="201.0" textFill="WHITE" />
+      <Button fx:id="botonRanking" layoutX="472.0" layoutY="25.0" mnemonicParsing="false" onAction="#addPuntuacionARanking" text="Subir puntuación" />
+      <Label fx:id="labelFin" alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="155.0" prefHeight="74.0" prefWidth="253.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
